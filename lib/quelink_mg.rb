@@ -40,6 +40,27 @@ require File.expand_path('quelink-mg/ack/gtudf.rb', __dir__)
 require File.expand_path('quelink-mg/buff/base.rb', __dir__)
 require File.expand_path('quelink-mg/buff/gtfri.rb', __dir__)
 
+require File.expand_path('quelink-mg/device_type.rb', __dir__)
+
+require File.expand_path('quelink-mg/gl30meu/at/gtrto.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/at/gtcfg.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/at/gtbsi.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/at/gtsri.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/at/gtupd.rb', __dir__)
+
+require File.expand_path('quelink-mg/gl30meu/resp/gtfri.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/resp/gtati.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/resp/gtinf.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/resp/gtupc.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/resp/gtupd.rb', __dir__)
+
+require File.expand_path('quelink-mg/gl30meu/ack/gtrto.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/ack/gtcfg.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/ack/gtbsi.rb', __dir__)
+require File.expand_path('quelink-mg/gl30meu/ack/gtsri.rb', __dir__)
+
+require File.expand_path('quelink-mg/gl30meu/buff/gtfri.rb', __dir__)
+
 require File.expand_path('quelink-mg/configuration.rb', __dir__)
 
 module QuelinkMg
