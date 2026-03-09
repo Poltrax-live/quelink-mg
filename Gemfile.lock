@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    quelink-mg (0.6.1)
+    quelink-mg (0.7.0)
       activesupport
 
 GEM
@@ -72,6 +72,7 @@ GEM
     unicode-display_width (2.4.2)
 
 PLATFORMS
+  arm64-darwin-25
   x86_64-linux
 
 DEPENDENCIES

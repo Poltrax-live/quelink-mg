@@ -31,7 +31,7 @@ module QuelinkMg
         Time.use_zone('UTC') { Time.zone.parse(value) }.in_time_zone
       end
 
-      def unify_keys(hash, skip_number_change=false)
+      def unify_keys(hash, skip_number_change = false)
         hash.transform_values do |v|
           if date?(v)
             transform_with_timezone(v)

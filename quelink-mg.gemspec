@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'quelink-mg'
-  s.version     = '0.6.2'
+  s.version     = '0.7.0'
   s.summary     = 'Quelink devices command reader and writer'
   s.description = 'Quelink devices command reader and writer'
   s.authors     = ['Stanislaw Zawadzki']
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.9'
   s.add_development_dependency 'rubocop', '~> 1.0'
   s.add_development_dependency 'rubocop-rspec', '~> 2.2'
-  s.metadata['rubygems_mfa_required'] = 'false'
+  s.metadata['rubygems_mfa_required'] = 'true'
 end
