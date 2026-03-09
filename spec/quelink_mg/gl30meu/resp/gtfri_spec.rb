@@ -16,7 +16,9 @@ RSpec.describe QuelinkMg::Gl30meu::Resp::Gtfri do
     expect(parsed_response['speed']).to eq 0.0
     expect(parsed_response['azimuth']).to eq 70
     expect(parsed_response['elevation']).to eq 17.8
-    expect(parsed_response['gps_utc_time']).to eq Time.use_zone('UTC') { Time.zone.parse('20231011084221') }.in_time_zone
+    expect(parsed_response['gps_utc_time']).to eq Time.use_zone('UTC') {
+      Time.zone.parse('20231011084221')
+    }.in_time_zone
     expect(parsed_response['send_time']).to eq Time.use_zone('UTC') { Time.zone.parse('20231011084241') }.in_time_zone
     expect(parsed_response['csq_rssi']).to eq 21
     expect(parsed_response['csq_ber']).to eq 0
