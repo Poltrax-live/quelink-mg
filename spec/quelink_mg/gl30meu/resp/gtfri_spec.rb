@@ -17,8 +17,8 @@ RSpec.describe QuelinkMg::Gl30meu::Resp::Gtfri do
     expect(parsed_response['azimuth']).to eq 70
     expect(parsed_response['elevation']).to eq 17.8
     expect(parsed_response['gps_utc_time']).to eq Time.use_zone('UTC') {
-                                                    Time.zone.parse('20231011084221')
-                                                  }.in_time_zone
+      Time.zone.parse('20231011084221')
+    }.in_time_zone
     expect(parsed_response['send_time']).to eq Time.use_zone('UTC') { Time.zone.parse('20231011084241') }.in_time_zone
     expect(parsed_response['csq_rssi']).to eq 21
     expect(parsed_response['csq_ber']).to eq 0
@@ -31,6 +31,6 @@ RSpec.describe QuelinkMg::Gl30meu::Resp::Gtfri do
     response = '970101,861106059716756,GL30MEU,0,0,1,1,0.0,70,17.8,121.348554,31.163204,20231011084221,0460,0000,5B63,0867349C,21,0,3552,2,1,0,,20231011084241,1A0C'
 
     parsed_response = described_class.new(response:).hash
-    expect(parsed_response.keys.count).to eq 26
+    expect(parsed_response.keys.length).to eq 26
   end
 end

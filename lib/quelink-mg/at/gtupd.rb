@@ -11,7 +11,8 @@ module QuelinkMg
 
       private
 
-      GTUPD_VALID_PARAMS = %i[password subcommand max_download_retry download_timeout download_protocol download_username download_password
+      GTUPD_VALID_PARAMS = %i[password subcommand max_download_retry download_timeout download_protocol
+                              download_username download_password
                               download_url reserved update_type reserved reserved serial_number].freeze
 
       def joined_params
