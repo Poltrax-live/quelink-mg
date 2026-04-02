@@ -10,7 +10,9 @@ module QuelinkMg
                              movement_status reserved reserved send_time count_number].freeze
 
         def hash
-          unify_keys(GTFRI_RESP_KEYS.zip(@response.split(',')).to_h)
+          result = unify_keys(GTFRI_RESP_KEYS.zip(@response.split(',')).to_h)
+          result['battery_percentage'] = result['current_mode_status']
+          result
         end
       end
     end
