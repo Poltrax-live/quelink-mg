@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    quelink-mg (0.7.0)
+    quelink-mg (0.7.1)
       activesupport
 
 GEM

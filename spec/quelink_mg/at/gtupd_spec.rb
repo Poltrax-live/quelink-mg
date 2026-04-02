@@ -20,6 +20,6 @@ RSpec.describe QuelinkMg::At::Gtupd do
   end
 
   it 'raises error on wrong params' do
-    expect { described_class.new(params: { download_timeout: 666}).message }.to raise_error(InvalidATGTUPDException)
+    expect { described_class.new(params: { download_timeout: 666 }).message }.to raise_error(InvalidATGTUPDException)
   end
 end
