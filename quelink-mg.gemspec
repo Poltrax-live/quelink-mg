@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'quelink-mg'
-  s.version     = '0.7.0'
+  s.version     = '0.7.1'
   s.summary     = 'Quelink devices command reader and writer'
   s.description = 'Quelink devices command reader and writer'
   s.authors     = ['Stanislaw Zawadzki']
