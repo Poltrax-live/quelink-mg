@@ -21,14 +21,15 @@ RSpec.describe QuelinkMg::Gl30meu::Resp::Gtfri do
     expect(parsed_response['csq_rssi']).to eq 21
     expect(parsed_response['csq_ber']).to eq 0
     expect(parsed_response['battery_voltage']).to eq 3552
-    expect(parsed_response['current_mode_status']).to eq 2
-    expect(parsed_response['movement_status']).to eq 1
+    expect(parsed_response['battery_percentage']).to eq 2
+    expect(parsed_response['current_mode_status']).to eq 1
+    expect(parsed_response['movement_status']).to eq 0
   end
 
-  it 'has 25 keys' do
+  it 'has 26 keys' do
     response = '970101,861106059716756,GL30MEU,0,0,1,1,0.0,70,17.8,121.348554,31.163204,20231011084221,0460,0000,5B63,0867349C,21,0,3552,2,1,0,,20231011084241,1A0C'
 
     parsed_response = described_class.new(response:).hash
-    expect(parsed_response.keys.length).to eq 25
+    expect(parsed_response.keys.length).to eq 26
   end
 end
