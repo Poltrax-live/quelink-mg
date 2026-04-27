@@ -23,8 +23,8 @@ RSpec.describe QuelinkMg::Gl30meu::Resp::Gtfri do
     expect(parsed_response['csq_rssi']).to eq 21
     expect(parsed_response['csq_ber']).to eq 0
     expect(parsed_response['battery_voltage']).to eq 3552
-    expect(parsed_response['current_mode_status']).to eq 2
-    expect(parsed_response['movement_status']).to eq 1
+    expect(parsed_response['current_mode_status']).to eq 1
+    expect(parsed_response['movement_status']).to eq 0
   end
 
   it 'has 25 keys' do
