@@ -64,10 +64,20 @@ RSpec.describe QuelinkMg::Gl30meu::At::Gtcfg do
     expect { described_class.new(params:).message }.to raise_error(InvalidATGTCFGException)
   end
 
-  it 'raises error on continuous_send_interval below minimum' do
+  it 'allows low continuous_send_interval values' do
     params = {
       password: 'gl30',
       continuous_send_interval: 5,
+      serial_number: 'FFFF'
+    }
+
+    expect(described_class.new(params:).message).to eq 'AT+GTCFG=gl30,,,,,,,5,,,,,,,,,,,,,,,,,,,,FFFF$'
+  end
+
+  it 'raises error on continuous_send_interval of 0' do
+    params = {
+      password: 'gl30',
+      continuous_send_interval: 0,
       serial_number: 'FFFF'
     }
 

@@ -26,7 +26,7 @@ module QuelinkMg
           acceptable_values = {
             gnss_timeout: (5..300),
             mode_selection: (0..5),
-            continuous_send_interval: (30..86_400),
+            continuous_send_interval: (1..86_400),
             start_mode: (0..3),
             wakeup_interval: (60..86_400),
             gnss_enable: (0..1),
