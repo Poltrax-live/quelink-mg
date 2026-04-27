@@ -6,6 +6,10 @@ AllCops:
   TargetRubyVersion: 3.1
 Style/Documentation:
   Enabled: false
+Style/EndOfLine:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
 Metrics/MethodLength:
   Max: 18
 Metrics/BlockLength:
@@ -19,3 +23,5 @@ RSpec/ExampleLength:
 Layout/LineLength:
   Exclude: 
     - spec/quelink_mg/resp/*_spec.rb
+    - spec/quelink_mg/gl30meu/**/*_spec.rb
+    - spec/quelink_mg/**.rb
